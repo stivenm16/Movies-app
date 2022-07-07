@@ -60,21 +60,24 @@ export class Buscador extends Component {
           <button type="submit">Buscar</button>
             </div>
         </form>
-        <ul>
-          
+        
+        <ul className="movies-list">
           {
           
           this.props.movies?.map(movie => {
             return (
               
-              <li key={movie.imbdID} >
+              <li key={movie.imbdID} className='movie-list' >
                 <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
 
-                <button onClick={() => this.props.addMovieFavorite({title: movie.Title, id: movie.imdbID})}>Fav</button>
+                <div className="fav-btn-container">
+                  <button className="btn-fav" onClick={() => this.props.addMovieFavorite({title: movie.Title, id: movie.imdbID})}>Fav</button>
+                </div>
               </li>
+
             )
           })}
-        </ul>
+          </ul>
       </div>
     );
   }

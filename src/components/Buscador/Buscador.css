@@ -6,7 +6,9 @@
     width: 35%;
     padding-bottom: 1.5rem;
     border-radius: 12px;
-
+    margin-bottom: 2rem;
+    transition: 1s;
+    box-shadow: 5px 11px 25px 0px rgba(0, 0, 0, 0.33);
 }
 
 .form-container button {
@@ -50,4 +52,43 @@
     align-items: center;
     flex-direction: column;
     margin-top: 2rem;
+    
+}
+
+.movie-list a {
+    color: #FFF;
+    text-decoration: none;
+    
+    align-items: center;
+    color: black
+}
+.movie-list{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem; 
+    transition: 2s;
+    
+    
+}
+
+.movies-list {
+    list-style: none;
+    width: 50%;
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(50, 167, 202);
+    color: black;
+    border-radius: 12px;
+    margin: .5rem;
+    box-shadow: 5px 11px 25px 0px rgba(0, 0, 0, 0.39);
+    
+}
+
+.fav-btn-container {
+    margin-left: 2rem;
 }
