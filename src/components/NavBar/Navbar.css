@@ -45,6 +45,7 @@
     background-color: rgba(0, 0, 0, 0.39);
     min-width: 4rem;
     transition: .8s ease-in-out;
+    border-radius: 6px;
     
 }
 

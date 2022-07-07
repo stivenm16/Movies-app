@@ -42,20 +42,23 @@ export class Buscador extends Component {
   render() {
     const { title } = this.state;
     return (
-      <div>
-        <h2>Buscador</h2>
+      <div className="container-buscador">
+        
         <form className="form-container" onSubmit={(e) => this.handleSubmit(e)}>
-          <div>
-            <label className="label" htmlFor="title">Película: </label>
+          
+            <h2 className="main-title">¿Que pelicula deseas buscar?</h2>
+            <div>
             <input
               type="text"
               id="title"
               autoComplete="off"
               value={title}
               onChange={(e) => this.handleChange(e)}
+              className='search-btn'
             />
-          </div>
-          <button type="submit">BUSCAR</button>
+          
+          <button type="submit">Buscar</button>
+            </div>
         </form>
         <ul>
           
@@ -64,7 +67,7 @@ export class Buscador extends Component {
           this.props.movies?.map(movie => {
             return (
               
-              <li key={movie.imbdID}>
+              <li key={movie.imbdID} >
                 <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
 
                 <button onClick={() => this.props.addMovieFavorite({title: movie.Title, id: movie.imdbID})}>Fav</button>

@@ -1,15 +1,53 @@
-.cnt {
-    padding-top: 10px;
-}
 .form-container {
     display:flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(141, 141, 141, 0.699);
+    width: 35%;
+    padding-bottom: 1.5rem;
+    border-radius: 12px;
+
 }
 
 .form-container button {
-    margin-left: 20px;
+    margin-left: 1.5rem;
+    border: none;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+    border-radius: 6px;
 }
+
+.form-container button:hover {
+    background-color: rgba(63, 1, 1, 0.575);
+    
+}
+
+.search-btn {
+    outline: none;
+    border: none;
+    padding: .35rem;
+    border-radius: 4px;
+}
+
 .label {
-    padding-right: 10px;
+    padding-right: .7rem;
+    color: #FFF;
+}
+
+.main-title{
+    color: #FFF;
+    font-weight: 600;
+}
+.container-buscador {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
 }
