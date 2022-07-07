@@ -1,13 +1,11 @@
 .navbar {
-    height: 56px;
+    position:relative;
+    height: 10vh;
     width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #303236;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
@@ -23,6 +21,7 @@
     flex-flow: row;
     align-items: center;
     height: 100%;
+    font-size: 16px;
 }
 
 .list-item {
@@ -31,17 +30,27 @@
     height: 100%;
     width: auto;
     align-items: center;
+    gap: 1rem;
+    text-align: center;
+    
+    
 }
 
 .list-item a {
     color: white;
     height: 100%;
-    padding: 16px 10px;
-    border-bottom: 4px solid transparent;
+    padding: .6rem;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.39);
+    min-width: 4rem;
+    transition: .8s ease-in-out;
+    
 }
 
 .list-item a:hover,
 .list-item a.active {
-    background-color: #808080;
-    color: white;
+    
+    background-color: rgba(240, 255, 255, 0.247);
+
 }

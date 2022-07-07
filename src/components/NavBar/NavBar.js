@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../logoHenry.png'
+import Logo from '../../Icons/github.png'
 
 import './Navbar.css';
 
@@ -13,8 +13,8 @@ export default function NavBar() {
             <nav>
                 <ul className="list">
                     <li className="list-item">
-                        <NavLink exact to="/" >Home</NavLink>
-                        <NavLink to="/favs" >Favoritas</NavLink>
+                        <NavLink exact to="/" className='nav-link'>Home</NavLink>
+                        <NavLink to="/favs" className='nav-link'>Favoritas</NavLink>
                     </li>
                 </ul>
             </nav>
